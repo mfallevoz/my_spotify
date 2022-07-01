@@ -1,0 +1,112 @@
+.trackList {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  position: absolute;
+  bottom: 4%;
+  width: 80%;
+}
+
+.trackList .top {
+  display: flex;
+  align-items: center;
+}
+
+.trackList .top img {
+  width: 70px;
+}
+
+.trackList .top .text-track {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  color: white;
+}
+
+.trackList .top .text-track .trackName {
+  margin-bottom: 5px;
+}
+
+.trackList .top .trackArtist {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+.trackList .bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.trackList .bottom i {
+  color: $color-text;
+  font-size: 20px;
+}
+
+.trackList .bottom i:hover {
+  color: white;
+  transition: 0.2s ease-in;
+  cursor: pointer;
+}
+
+.trackList .bottom input {
+  position: relative;
+  height: 6px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  appearance: none;
+}
+
+/* Google & Safari */
+.trackList .bottom input::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  background: $color-green;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 2;
+  transition: width 250ms linear;
+}
+
+.trackList .bottom input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 10px;
+  height: 20px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #000;
+  cursor: pointer;
+  position: relative;
+  margin: -2px 0 0 0;
+  z-index: 3;
+  transition: all 250ms linear;
+}
+
+/* Firefox */
+.trackList .bottom input::-moz-progress-bar {
+  background: $color-green;
+  width: 50%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 2;
+  transition: width 250ms linear;
+}
+
+.trackList .bottom input::-moz-range-thumb {
+  -moz-appearance: none;
+  width: 10px;
+  height: 20px;
+  border-radius: 10px;
+  background: white;
+  border: 1px solid #000;
+  cursor: pointer;
+  position: relative;
+  margin: -2px 0 0 0;
+  z-index: 3;
+  transition: all 250ms linear;
+}

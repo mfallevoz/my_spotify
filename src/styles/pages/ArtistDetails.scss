@@ -1,0 +1,45 @@
+.displayWrapDetails {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1409px;
+  margin: 0 25px 0 320px;
+}
+
+.detailsContainer {
+  width: 70vw;
+  justify-content: center;
+  margin: 10px 40px;
+}
+
+.coverLg {
+  width: 300px;
+  height: 100%;
+}
+
+.headerDetails {
+  max-width: 75vw;
+  height: 365px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px 0px;
+}
+
+.textContent {
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.textContent span {
+  font-size: 18px;
+}
+
+.titleHolder {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-top: 2px;
+}
+
+.titleDescription {
+  padding-top: 5px;
+  padding-bottom: 3px;
+}

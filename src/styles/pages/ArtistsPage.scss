@@ -1,0 +1,116 @@
+.displayWrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1409px;
+  margin: 0 25px 0 320px;
+}
+
+.tab {
+  text-decoration: none;
+}
+
+.root {
+  display: flex;
+  max-width: 200px;
+  max-height: 250px;
+  flex-direction: column-reverse;
+  flex-grow: 1;
+  margin: 15px 15px;
+}
+
+.colDirection {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  min-height: 60px;
+  width: 100%;
+}
+
+.content {
+  flex: 1 0 auto;
+  overflow: hidden;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.textHide {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  text-align: center;
+  font-size: 10px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playIcon {
+  height: 40px;
+  width: 40px;
+  color: #69db55;
+}
+
+.cover {
+  width: 200px;
+  height: 130px;
+}
+
+.displayCenter {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination1 {
+  min-width: max-content;
+  margin: 20px auto;
+  display: flex;
+}
+
+.pagination {
+  margin: 15px auto;
+  display: flex;
+  list-style: none;
+  outline: none;
+}
+.pagination > .active > a {
+  background-color: #69db55;
+  border-color: #69db55;
+  color: #fff;
+}
+.pagination > li > a {
+  border: 1px solid #69db55;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  background-color: #69db55;
+  border-color: #69db55;
+  outline: none;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #69db55;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span,
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-radius: unset;
+}
